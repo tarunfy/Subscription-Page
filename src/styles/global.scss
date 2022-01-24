@@ -92,3 +92,22 @@ body {
     color: #3c464f;
   }
 }
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 97%;
+  text-transform: uppercase;
+  background-color: #13324a;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 1rem 0rem;
+  border: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+}

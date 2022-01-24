@@ -1,12 +1,11 @@
-import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import heroImg from "./media/Hero.png";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import Card from "./components/Card";
 
 function App() {
-  const [toggleCard, setToggleCard] = useState(false);
   return (
     <>
       <Navbar />
@@ -45,7 +44,6 @@ function App() {
         isBestResult
         currentPrice="595"
         priceBefore="795"
-        isActive={false}
       />
       <Card
         numOfTubes="12"
@@ -54,8 +52,11 @@ function App() {
         saved="12"
         currentPrice="899"
         priceBefore="999"
-        isActive={true}
       />
+      <div id="button-container">
+        <AiOutlineShoppingCart className="icon" />
+        Add to cart
+      </div>
     </>
   );
 }

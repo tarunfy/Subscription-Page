@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsStarFill } from "react-icons/bs";
 import { FiCheck } from "react-icons/fi";
 
@@ -13,9 +13,14 @@ const Card = ({
   priceBefore,
   isActive,
 }) => {
+  const [toggleCard, setToggleCard] = useState(false);
+
+  const handleToggle = () => {
+    setToggleCard((prev) => !prev);
+  };
   return (
-    <div className={`${isActive && `wrapper`}`}>
-      <div className={`card-container ${isActive && `active`}`}>
+    <div className={`${toggleCard && `wrapper`}`} onClick={handleToggle}>
+      <div className={`card-container ${toggleCard && `active`}`}>
         <div className="left-container">
           {mostPopular && (
             <div className="most-popular">
@@ -38,7 +43,7 @@ const Card = ({
           <p id="price-before">₹{priceBefore}</p>
         </div>
       </div>
-      {isActive && <FiCheck className="icon" />}
+      {toggleCard && <FiCheck className="icon" />}
     </div>
   );
 };
