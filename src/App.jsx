@@ -45,9 +45,17 @@ function App() {
         isBestResult
         currentPrice="595"
         priceBefore="795"
-        isActive={toggleCard}
+        isActive={false}
       />
-      <Card />
+      <Card
+        numOfTubes="12"
+        savings="100"
+        numOfMonths="3"
+        saved="12"
+        currentPrice="899"
+        priceBefore="999"
+        isActive={true}
+      />
     </>
   );
 }

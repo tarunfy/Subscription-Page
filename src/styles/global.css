@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Belgrano&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .navbar-container {
   padding: 1rem 0rem;
   display: -webkit-box;
@@ -20,6 +22,225 @@
   width: 1.2rem;
   color: white;
   cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .card-container {
+  width: 92%;
+  margin: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+  background-color: #21272c;
+  border-radius: 1rem;
+}
+
+.wrapper .card-container .left-container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+.wrapper .card-container .left-container p {
+  color: #465d68;
+  font-family: "Belgrano", sans-serif;
+}
+
+.wrapper .card-container .left-container .most-popular {
+  padding: 0.2rem;
+  background-color: #067bd8;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 65%;
+}
+
+.wrapper .card-container .left-container .most-popular p {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6rem;
+}
+
+.wrapper .card-container .left-container .most-popular .icon {
+  color: white;
+  height: 12px;
+  width: 12px;
+  margin: 0rem;
+}
+
+.wrapper .card-container .left-container .savings-container {
+  margin-top: 0.8rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+.wrapper .card-container .left-container .savings-container h4 {
+  color: #24db6d;
+}
+
+.wrapper .card-container .left-container .savings-container #best-result {
+  color: #db9d24;
+}
+
+.wrapper .card-container .right-container {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.1rem;
+}
+
+.wrapper .card-container .right-container #price-before {
+  text-decoration: line-through;
+  color: #4c6070;
+}
+
+.wrapper .active {
+  border: 2px solid white;
+}
+
+.wrapper .icon {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.card-container {
+  width: 92%;
+  margin: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+  background-color: #21272c;
+  border-radius: 1rem;
+}
+
+.card-container .left-container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+.card-container .left-container p {
+  color: #465d68;
+  font-family: "Belgrano", sans-serif;
+}
+
+.card-container .left-container .most-popular {
+  padding: 0.2rem;
+  background-color: #067bd8;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 65%;
+}
+
+.card-container .left-container .most-popular p {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6rem;
+}
+
+.card-container .left-container .most-popular .icon {
+  color: white;
+  height: 12px;
+  width: 12px;
+  margin: 0rem;
+}
+
+.card-container .left-container .savings-container {
+  margin-top: 0.8rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+.card-container .left-container .savings-container h4 {
+  color: #24db6d;
+}
+
+.card-container .left-container .savings-container #best-result {
+  color: #db9d24;
+}
+
+.card-container .right-container {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.1rem;
+}
+
+.card-container .right-container #price-before {
+  text-decoration: line-through;
+  color: #4c6070;
 }
 
 * {

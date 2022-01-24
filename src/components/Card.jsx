@@ -16,27 +16,29 @@ const Card = ({
   return (
     <div className={`${isActive && `wrapper`}`}>
       <div className={`card-container ${isActive && `active`}`}>
-        <div>
+        <div className="left-container">
           {mostPopular && (
             <div className="most-popular">
-              <BsStarFill />
-              <h2>Most Popular</h2>
-              <BsStarFill />
+              <BsStarFill className="icon" />
+              <p>Most Popular</p>
+              <BsStarFill className="icon" />
             </div>
           )}
-          <h2>1 Months Pack (4 tubes)</h2>
-          <p>Savings: ₹200</p>
-          <div>
-            <h4>38% Saved</h4>
-            {isBestResult && <h4>Best Results</h4>}
+          <h2>
+            {numOfMonths} Months Pack ({numOfTubes} tubes)
+          </h2>
+          <p>Savings: ₹{savings}</p>
+          <div className="savings-container">
+            <h4>{saved}% Saved</h4>
+            {isBestResult && <h4 id="best-result">Best Results</h4>}
           </div>
         </div>
-        <div className="price-container">
-          <h1>₹595</h1>
-          <h1>₹795</h1>
+        <div className="right-container">
+          <p>₹{currentPrice}</p>
+          <p id="price-before">₹{priceBefore}</p>
         </div>
       </div>
-      {isActive && <FiCheck />}
+      {isActive && <FiCheck className="icon" />}
     </div>
   );
 };
