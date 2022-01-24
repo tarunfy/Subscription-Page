@@ -1,0 +1,13 @@
+.navbar-container {
+  padding: 1rem 0rem;
+  display: flex;
+  border-bottom: 1px solid grey;
+  justify-content: space-between;
+  align-items: center;
+  .icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    color: white;
+    cursor: pointer;
+  }
+}
